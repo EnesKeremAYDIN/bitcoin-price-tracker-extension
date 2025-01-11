@@ -1,0 +1,158 @@
+:root {
+    --light-bg: #ffffff;
+    --light-text: #1a1a1a;
+    --light-secondary: #666666;
+    --light-border: #e0e0e0;
+    --light-hover: rgba(0, 0, 0, 0.05);
+
+    --dark-bg: #1a1a1a;
+    --dark-text: #ffffff;
+    --dark-secondary: #808080;
+    --dark-border: #2a2a2a;
+    --dark-hover: rgba(255, 255, 255, 0.1);
+
+    --primary-color: #f3b922;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 280px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.light-theme {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+.popup-container {
+    padding: 16px;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.theme-toggle button {
+    background: transparent;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-theme .theme-toggle button {
+    color: var(--dark-text);
+}
+
+.light-theme .theme-toggle button {
+    color: var(--light-text);
+}
+
+.theme-toggle button:hover {
+    background: var(--dark-hover);
+}
+
+.light-theme .theme-toggle button:hover {
+    background: var(--light-hover);
+}
+
+.price-container {
+    background: var(--dark-hover);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.light-theme .price-container {
+    background: var(--light-hover);
+}
+
+.price-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.crypto-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.crypto-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.price-value {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.update-time {
+    font-size: 12px;
+    color: var(--dark-secondary);
+}
+
+.light-theme .update-time {
+    color: var(--light-secondary);
+}
+
+.powered-by {
+    text-align: center;
+    font-size: 12px;
+    color: var(--dark-secondary);
+}
+
+.light-theme .powered-by {
+    color: var(--light-secondary);
+}
+
+.powered-by a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.powered-by a:hover {
+    text-decoration: underline;
+}
+
+.platform-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-text);
+    letter-spacing: 0.5px;
+}
+
+.platform-name a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.platform-name a:hover {
+    opacity: 0.8;
+}
+
+.light-theme .platform-name {
+    color: var(--light-text);
+} 

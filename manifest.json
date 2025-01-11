@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Bitcoin Price Tracker",
+  "short_name": "BTC Tracker",
+  "version": "1.0",
+  "description": "Real-time Bitcoin price tracker powered by Binance API. Monitor BTC/USDT price with dark/light theme support.",
+  "author": "ChainPlatform",
+  "homepage_url": "https://chainplatform.co",
+  "action": {
+    "default_popup": "src/html/popup.html",
+    "default_icon": {
+      "16": "assets/images/bitcoin.png",
+      "48": "assets/images/bitcoin.png",
+      "128": "assets/images/bitcoin.png"
+    }
+  },
+  "host_permissions": ["https://api.binance.com/*"],
+  "background": {
+    "service_worker": "src/js/background.js"
+  },
+  "icons": {
+    "16": "assets/images/bitcoin.png",
+    "48": "assets/images/bitcoin.png",
+    "128": "assets/images/bitcoin.png"
+  },
+  "minimum_chrome_version": "88",
+  "offline_enabled": false,
+  "permissions": []
+} 
