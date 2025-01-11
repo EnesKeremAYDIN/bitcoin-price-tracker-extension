@@ -46,7 +46,7 @@ Bitcoin Price Tracker is a Chrome extension that provides real-time Bitcoin pric
 
 1. **Download or Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/bitcoin-price-tracker.git
+   git clone https://github.com/EnesKeremAYDIN/bitcoin-price-tracker-extension.git
    cd bitcoin-price-tracker
    ```
 
